@@ -1,0 +1,20 @@
+:root {
+    --color-blue: #336699;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.text-blue {
+    color: var(--color-blue);
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
+
+.position-icon {
+    position: relative;
+    top: 1px
+}
