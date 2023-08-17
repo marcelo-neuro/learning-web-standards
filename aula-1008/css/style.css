@@ -1,13 +1,19 @@
 :root {
     --color-blue: #336699;
+    --color-pink: #dc143c;
+    --font-body: 'Inter', sans-serif;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
 }
 
 .text-blue {
     color: var(--color-blue);
+}
+
+.text-pink {
+    color:var(--color-pink);
 }
 
 .navbar-toggler {
@@ -17,4 +23,14 @@ body {
 .position-icon {
     position: relative;
     top: 1px
+}
+
+.logo {
+    color:var(--color-blue);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: var(--color-blue);
 }
