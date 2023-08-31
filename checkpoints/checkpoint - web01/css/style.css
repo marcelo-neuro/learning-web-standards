@@ -1,0 +1,21 @@
+:root {
+    --font-body: 'Quicksand', sans-serif;
+    --color-green: #3B5D50;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+.cloud-icon {
+    position: relative;
+    top: 1px;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
+
+.bg-green {
+    background-color: var(--color-green);
+}
