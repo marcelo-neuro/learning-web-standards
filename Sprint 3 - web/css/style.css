@@ -2,6 +2,18 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+:root{
+    --color-light: #ffffef;
+}
+
 .navbar-toggler {
     box-shadow: none !important;
+}
+
+.text-hover{
+    transition: .5s;
+}
+
+.text-hover:hover{
+    color: var(--color-light)
 }
