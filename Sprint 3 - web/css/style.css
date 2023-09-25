@@ -1,0 +1,7 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+}
