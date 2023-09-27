@@ -4,6 +4,8 @@ body {
 
 :root{
     --color-light: #ffffef;
+    --color-dark: #212529;
+    --color-red: #dc3545;
 }
 
 .navbar-toggler {
@@ -16,4 +18,27 @@ body {
 
 .text-hover:hover{
     color: var(--color-light)
+}
+
+.bs-icon{
+    position: relative;
+    top: 1px;
+}
+
+.collapsed {
+    background-color: var(--color-light) !important;
+    color: var(--color-dark) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-red);
+    color: var(--color-light);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.form-control {
+    box-shadow: none !important;
 }

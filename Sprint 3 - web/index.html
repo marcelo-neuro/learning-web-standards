@@ -1,204 +1,360 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TNT - Dinamite</title>
 
+    <!-- Chamada dos BS icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <!-- Chamada do google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 
     <!-- Css bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="./css/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="bg-danger fs-5">
-      <nav class="navbar navbar-expand-lg container-md">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <span class="border border-2 border-dark rounded">
-              T
-              <span class="bg-light">N</span>
-              T
-            </span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggl   e navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="ms-auto collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item me-2">
-                <a class="nav-link text-hover" href="#">Nosso robô</a>
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link text-hover" href="#">Galeria</a>
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link text-hover" href="#">Especificações</a>
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link text-hover" href="#">Apresentação</a>
-              </li>
-              <li class="nav-item me-2">
-                <a class="nav-link text-hover" href="#">Contato</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg container-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <span class="border border-2 border-dark rounded">
+                        T
+                        <span class="bg-light">N</span>
+                        T
+                    </span>
+                </a>
+                <button class="navbar-toggler border border-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggl   e navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="ms-auto collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-hover" href="#">Nosso robô</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-hover" href="#">Galeria</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-hover" href="#">Especificações</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-hover" href="#">Apresentação</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link text-hover" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-      <section class="bg-danger w-100 p-5">
-        <article class="container-md row d-flex align-items-center">
-          <div class="col-md-6 ge-3">
-            <h1 class="display-3 mb-3 text-light">Nosso Robô</h1>
-            <p class="fs-3 mb-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
-              quidem obcaecati suscipit, quos libero expedita.
-            </p>
+        <section class="bg-danger w-100 p-5">
+            <article class="container-md row d-flex align-items-center mx-auto">
+                <div class="col-md-6">
+                    <h1 class="display-3 mb-3 text-light">Nosso Robô</h1>
+                    <p class="fs-3 mb-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+                        quidem obcaecati suscipit, quos libero expedita.
+                    </p>
 
-            <a class="btn btn-outline-light mb-5 p-2 rounded-pill" href=""
-              >Veja nossa apresentação</a
-            >
-          </div>
+                    <a class="btn btn-outline-light mb-5 p-3 rounded-pill fs-5" href="">
+                        Veja nossa apresentação
+                        <i class="bi bi-arrow-down-circle-fill fs-5 bs-icon"></i>
+                    </a>
+                </div>
 
-          <figure class="col-md-6 ge-3 text-center">
-            <img
-              src="https://placehold.co/300"
-              alt="Imagem do nosso robô: Dinamite."
-            />
-          </figure>
-        </article>
-      </section>
+                <figure class="col-md-6 ge-3 text-center">
+                    <img src="https://placehold.co/300" alt="Imagem do nosso robô: Dinamite." />
+                </figure>
+            </article>
+        </section>
 
-      <section class="bg-light w-100 p-5">
-        <article class="container-md row d-flex align-items-center">
-          <div class="col-md-7 order-md-1 order-0 mb-5">
-            <h2 class="display-4 text-dark m-auto">Galeria</h2>
-            <p class="text-dark fs-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
-              accusantium at sunt voluptate minus libero beatae consectetur ex
-              obcaecati autem.
-            </p>
-          </div>
-          
-          <div id="carouselExampleIndicators" class="carousel slide col-md-5 order-md-0 order-1">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="4"
-                aria-label="Slide 5"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="5"
-                aria-label="Slide 6"
-              ></button>
+        <section class="bg-light w-100 p-5">
+            <article class="container-md row d-flex align-items-center gx-5 mx-auto">
+                <div class="col-md-7 order-md-1 order-0 mb-5">
+                    <h2 class="display-4 text-danger">Galeria</h2>
+                    <p class="text-dark fs-4">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum
+                        accusantium at sunt voluptate minus libero beatae consectetur ex
+                        obcaecati autem.
+                    </p>
+                </div>
+
+                <div id="carouselExampleIndicators" class="carousel slide col-md-5 order-md-0 order-1">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://placehold.co/300" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/300" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/300" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="https://placehold.co/300" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/300" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://placehold.co/300" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <section class="bg-light w-100 p-5">
+            <div class="container-md mx-auto mb-5">
+                <h2 class="display-4 text-danger">Especificações</h2>
+                <p class="fs-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa voluptates doloribus, fugiat amet
+                    minima vitae at a aliquam quos possimus modi perspiciatis. Totam, consectetur! Ex.
+                </p>
             </div>
 
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://placehold.co/300" class="d-block w-100" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img src="https://placehold.co/300" class="d-block w-100" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img src="https://placehold.co/300" class="d-block w-100" alt="..." />
-              </div>
-              <div class="carousel-item active">
-                <img src="https://placehold.co/300" class="d-block w-100" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img src="https://placehold.co/300" class="d-block w-100" alt="..." />
-              </div>
-              <div class="carousel-item">
-                <img src="https://placehold.co/300" class="d-block w-100" alt="..." />
-              </div>
+            <article class="container-md mx-auto px-5">
+                <h3 class="display-5 text-danger">Arma do robô</h3>
+                <p class="fs-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas hic impedit molestias odit ex
+                    dolores laborum voluptatem commodi veniam sequi!
+                </p>
+
+                <div class="text-center m-auto mb-5 mt-4 ratio ratio-16x9">
+                    <iframe 
+                    class="p-md-5"
+                     src="https://www.youtube.com/embed/Z_3BzA5ZSLY?si=D967y4r4vCLj8JAo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+
+            <article class="container-md mx-auto px-5">
+                <h3 class="display-5 text-danger">Hardware do robô</h3>
+                <p class="fs-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rem esse saepe, ex sapiente ab?
+                </p>
+
+                <!-- inicio accordion -->
+                <div class="accordion accordion-flush px-md-5" id="accordionExample">
+                    <div class="accordion-item border border-secondary rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Arduino Mega
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <p class="col-md-7 fs-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nobis, aliquam
+                                    aperiam error dicta harum laborum reprehenderit velit in distinctio incidunt
+                                    laboriosam quisquam molestiae quasi.
+                                </p>
+
+                                <figure class="col-md-5 text-center">
+                                    <img src="https://placehold.co/150" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border border-secondary rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Driver Motor Ponte H - L298N
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <p class="col-md-7 fs-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nobis, aliquam
+                                    aperiam error dicta harum laborum reprehenderit velit in distinctio incidunt
+                                    laboriosam quisquam molestiae quasi.
+                                </p>
+
+                                <figure class="col-md-5 text-center">
+                                    <img src="https://placehold.co/150" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border border-secondary rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Motor DC 3 - 6V
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <p class="col-md-7 fs-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nobis, aliquam
+                                    aperiam error dicta harum laborum reprehenderit velit in distinctio incidunt
+                                    laboriosam quisquam molestiae quasi.
+                                </p>
+
+                                <figure class="col-md-5 text-center">
+                                    <img src="https://placehold.co/150" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border border-secondary rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Fita de led 12v
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <p class="col-md-7 fs-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nobis, aliquam
+                                    aperiam error dicta harum laborum reprehenderit velit in distinctio incidunt
+                                    laboriosam quisquam molestiae quasi.
+                                </p>
+
+                                <figure class="col-md-5 text-center">
+                                    <img src="https://placehold.co/150" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border border-secondary rounded">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Sensores de fim de curso
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body row">
+                                <p class="col-md-7 fs-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nobis, aliquam
+                                    aperiam error dicta harum laborum reprehenderit velit in distinctio incidunt
+                                    laboriosam quisquam molestiae quasi.
+                                </p>
+
+                                <figure class="col-md-5 text-center">
+                                    <img src="https://placehold.co/150" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="bg-danger w-100 p-5">
+            <article class="container-md mx-auto">
+                <h2 class="display-4 text-light mb-4">Nossa Luta</h2>
+
+                <p class="fs-4 text-dark mx-auto px-md-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab natus magni est, facilis, consequatur, tempora maxime assumenda rerum autem aperiam explicabo asperiores hic. Nobis, ex.
+                </p>
+                
+                <a class="btn btn-outline-light mt-3 p-3 rounded-pill fs-5 ms-5" href="">
+                    Entre em contato
+                    <i class="bi bi-arrow-down-circle-fill fs-5 bs-icon"></i>
+                </a>
+
+                <div class="text-center m-auto my-5 ratio ratio-16x9">
+                    <iframe 
+                    class="px-md-5"
+                     src="https://www.youtube.com/embed/Z_3BzA5ZSLY?si=D967y4r4vCLj8JAo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
+
+        <section class="bg-danger w-100 p-5">
+            <article class="container-md row d-flex align-items-center justify-content-center mx-auto gx-5">
+                <div class="col-lg-7 mb-4 order-lg-1 order-0">
+                    <h2 class="display-3 text-light mb-5">Nossa equipe</h2>
+                    <p class="fs-3 text-dark">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reprehenderit ut dolore commodi ad eaque laboriosam, tempora vitae distinctio omnis, eius perspiciatis similique hic recusandae!
+                    </p>
+                </div>
+
+                <figure class="col-lg-5 order-lg-0 order-1 d-flex justify-content-center">
+                    <img src="https://placehold.co/300" alt="">
+                </figure>
+            </article>
+        </section>
+
+        <section action="" method="post" class="bg-light p-5 w-100">
+            <div class="container-md mx-auto">
+                <legend class="display-3 text-danger mb-4">Entre em contato conosco</legend>
+                <p class="fs-3">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis officiis reprehenderit deserunt! Deserunt animi numquam doloribus nisi, quibusdam incidunt, quidem sapiente, quae quis id in.
+                </p>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </article>
-      </section>
+
+            <form action="" method="post" class="container-md px-5">
+                <label for="email" class="form-label fs-4 text-danger">Endereço de email</label>
+                <input type="email" name="email" id="email" class="form-control w-50 border border-dark rounded-pill mb-4" placeholder="seuemail@dominio.com" required>
+
+                <label for="message" class="form-label fs-4 text-danger">Mande sua mensagem</label>
+                <textarea name="message" id="message" class="form-control w-50 border border-dark rounded-4" cols="30" rows="10" placeholder="Escreva aqui sua mensagem" required></textarea>
+
+                <button type="submit" class="btn btn-outline-danger border border-danger rounded-pill mt-5 px-4 py-2">
+                    Enviar
+                    <i class="bi bi-send bs-icon"></i>
+                </button>
+            </form>
+        </section>
     </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <footer class="bg-dark w-100 p-5">
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
